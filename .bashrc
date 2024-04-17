@@ -1,4 +1,4 @@
-export POSH_THEME=/home/alien/themes/thecyberden.omp.json
+export POSH_THEME=/home/alien/themes/mytheme.omp.json
 export POSH_SHELL_VERSION=$BASH_VERSION
 export POWERLINE_COMMAND="oh-my-posh"
 export POSH_PID=$$
@@ -76,3 +76,6 @@ fi
 if [ "false" == "true" ]; then
     echo ""
 fi
+
+alias httpsmirrors="rate-mirrors --allow-root --protocol https arch | sudo tee /etc/pacman.d/mirrorlist"
+
